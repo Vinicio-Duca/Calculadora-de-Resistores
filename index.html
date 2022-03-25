@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora </title>
+    <style type="text/css">
+        
+        .corp, .calcular, .tabela{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }  
+    </style>
+</head>
+<body>  
+    <form>
+        <fieldset class="corp">
+            <legend> Calculadora de Resistores: </legend>
+            <label for="1Faixa"> <b> Pimeira Faixa: </b> </label>
+            <select name="primeira" id="1Faixa">
+                <option value="0"> Preto </option>
+                <option value="1"> Marrom </option>
+                <option value="2"> Vermelho </option>
+                <option value="3"> Laranja </option>
+                <option value="4"> Amarelo </option>
+                <option value="5"> Verde </option>
+                <option value="6"> Azul </option>
+                <option value="7"> Violeta </option>
+                <option value="8"> Cinza </option>
+                <option value="9"> Branco </option>
+            </select>
+            <label for="2Faixa"> <b> Segunda Faixa: </b> </label>
+            <select name="segunda" id="2Faixa">
+                <option value="0"> Preto </option>
+                <option value="1"> Marrom </option>
+                <option value="2"> Vermelho </option>
+                <option value="3"> Laranja </option>
+                <option value="4"> Amarelo </option>
+                <option value="5"> Verde </option>
+                <option value="6"> Azul </option>
+                <option value="7"> Violeta </option>
+                <option value="8"> Cinza </option>
+                <option value="9"> Branco </option>
+            </select>
+            <label for="3Faixa"> <b> Terceira Faixa: </b> </label>
+            <select name="terceira" id="3Faixa">
+                <option value="0"> Preto </option>
+                <option value="1"> Marrom </option>
+                <option value="2"> Vermelho </option>
+                <option value="3"> Laranja </option>
+                <option value="4"> Amarelo </option>
+                <option value="5"> Verde </option>
+                <option value="6"> Azul </option>
+                <option value="7"> Violeta </option>
+                <option value="8"> Cinza </option>
+                <option value="9"> Branco </option>
+            </select>
+            <label for="4Faixa"> <b> Quarta Faixa: </b> </label>
+            <select name="quarta" id="4Faixa">
+                <option value="1"> Preto </option>
+                <option value="10"> Marrom </option>
+                <option value="100"> Vermelho </option>
+                <option value="1000"> Laranja </option>
+                <option value="10000"> Amarelo </option>
+                <option value="100000"> Verde </option>
+                <option value="1000000"> Azul </option>
+                <option value="10000000"> Violeta </option>
+                <option value="0.1"> Dourado </option>
+                <option value="0.01"> Prateado </option>
+            </select>
+            <label for="5Faixa"> <b> Quinta Faixa: </b> </label>
+            <select name="quinta" id="5Faixa">
+                <option value="0.01"> Marrom </option>
+                <option value="0.02"> Vermelho </option>
+                <option value="0.005"> Verde </option>
+                <option value="0.0025"> Azul </option>
+                <option value="0.001"> Violeta </option>
+                <option value="0.0005"> Cinza </option>
+                <option value="0.05"> Dourado </option>
+                <option value="0.1"> Prateado </option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend> Resultado: </legend>
+            <div id="resultado"></div>
+        </fieldset>
+        <p><button class="calcular" type="button" onclick="pegarDados()"> Realizar Calculo </button></p>
+    </form>
+    <script src="script.js"></script>
+    <div class="tabela">
+        <center>
+        <img src="tabela_de_core.png">
+        </center>
+        
+    </div>
+</body>
+</html>
